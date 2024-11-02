@@ -109,3 +109,10 @@ Handles errors from API requests.
 
 - **Example**:
   This method is called internally within `getNewCaptcha()` and does not need to be called directly.
+
+
+<div style="text-align: left;">
+    <img src="https://github.com/user-attachments/assets/f0fd18c8-5084-4078-9aca-4cd5e7b115a0" alt="Nker" width="500" style="float: left; margin-right: 10px;" />
+</div>
+
+
