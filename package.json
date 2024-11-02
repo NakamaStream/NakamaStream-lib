@@ -2,7 +2,10 @@
   "name": "nakamastream-lib",
   "version": "1.0.0",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "api-lib",
+    "nakamastream"
+  ],
   "author": "NakamaGroup",
   "homepage": "https://github.com/NakamaStream/nakamaUI",
   "repository": {
