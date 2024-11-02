@@ -1,5 +1,5 @@
 {
-  "name": "@NakamaStream/Nakamastream-lib",
+  "name": "nakamastream-lib",
   "version": "1.0.0",
   "main": "index.js",
   "keywords": [
