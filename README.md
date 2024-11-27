@@ -78,6 +78,64 @@ module.exports = {
   console.log(lastAnime);
   ```
 
+# AnimesAll
+
+## Methods
+
+### `fetchAllAnimes()`
+
+- **Description**: 
+  Performs a GET request to the API to retrieve the complete list of animes. This method adheres to a defined rate limit to prevent too frequent requests to the API.
+
+- **Returns**: 
+  A promise that resolves to an array of objects representing all animes.
+
+- **Errors**: 
+  Throws an error if the rate limit is exceeded or if there is an issue fetching the animes.
+
+- **Example**:
+  ```javascript
+  try {
+    const allAnimes = await animesAll.fetchAllAnimes();
+    console.log(allAnimes);
+  } catch (error) {
+    console.error(error.message);
+  }
+  ```
+
+### `searchAnimes(query)`
+
+- **Description**:
+  Searches for animes by title in the cached data.
+
+- **Parameters**:
+  - `query` (string): The search term to filter animes by title.
+
+- **Returns**:
+  An array of anime objects that match the search term. Returns an empty array if no cache is available.
+
+- **Example**:
+  ```javascript
+  const results = animesAll.searchAnimes('Death Note');
+  console.log(results);
+  ```
+
+### `getCachedAnimes()`
+
+- **Description**:
+  Retrieves the cached anime data without making a new API request.
+
+- **Returns**:
+  The cached array of anime objects or null if no cache exists.
+
+- **Example**:
+  ```javascript
+  const cachedData = animesAll.getCachedAnimes();
+  if (cachedData) {
+    console.log('Using cached data:', cachedData);
+  }
+  ```
+
 # CaptchaService
 
 ## Methods
@@ -114,5 +172,3 @@ Handles errors from API requests.
 <div style="text-align: left;">
     <img src="https://github.com/user-attachments/assets/f0fd18c8-5084-4078-9aca-4cd5e7b115a0" alt="Nker" width="500" style="float: left; margin-right: 10px;" />
 </div>
-
-
